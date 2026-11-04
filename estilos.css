@@ -15,6 +15,6 @@ button:focus, a:focus, input:focus, .boton:focus { outline: none; }   /* foco in
 .iconos button { width: 18px; height: 18px; padding: 0; font-size: 11px; line-height: 18px; } /* objetivos chicos */
 .buscar { display: flex; gap: 6px; margin: 16px 0; }
 .buscar button { width: 40px; }
-.enlace-color { color: #0d4f8b; text-decoration: none; }      /* link distinguido solo por color */
+.enlace-color { color: #0d4f8b; text-decoration: underline; }      /* link distinguido solo por color */
 .error { color: #c0392b; font-size: 14px; min-height: 18px; }
 footer { margin-top: 40px; padding: 16px 24px; background: #f2f4f6; font-size: 13px; color: #9aa5b1; } /* contraste bajo */
