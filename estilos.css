@@ -11,7 +11,7 @@ h1 { color: #0d4f8b; margin-top: 8px; }
 form { display: grid; gap: 12px; max-width: 420px; margin-top: 16px; }
 input, select, textarea { padding: 10px; font-size: 15px; border: 1px solid #dfe5ea; border-radius: 4px; } /* borde ~1,2:1 */
 button, .boton { background: #0d4f8b; color: #fff; border: 0; padding: 10px 16px; border-radius: 4px; font-size: 15px; cursor: pointer; }
-button:focus, a:focus, input:focus, .boton:focus { outline: none; }   /* foco invisible */
+button:focus, a:focus, input:focus, .boton:focus { outline: 2px solid #2E75B6; /* FARO — WCAG 2.4.7 */ outline-offset: 2px;}   /* foco invisible */
 .iconos button { width: 18px; height: 18px; padding: 0; font-size: 11px; line-height: 18px; } /* objetivos chicos */
 .buscar { display: flex; gap: 6px; margin: 16px 0; }
 .buscar button { width: 40px; }
