@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - Centro Médico Aurora</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <a class="marca" href="index.html">Centro Médico Aurora</a>
+    <nav>
+      <a href="index.html">Turnos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Más</h1>
+    <p>Escribinos y te respondemos en el día. Consultá también nuestra
+      <a class="enlace-color" href="index.html">guía de obras sociales</a> antes de venir.</p>
+
+    <form id="form-contacto" action="#" novalidate>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" tabindex="3">
+
+      <label for="correo">Correo electrónico</label>
+      <input id="correo" type="email" required tabindex="1">
+      <div id="error-correo" class="error"></div>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" rows="4" tabindex="2"></textarea>
+
+      <div class="boton" onclick="enviar()">Enviar consulta</div>
+    </form>
+
+    <p>Seguinos:
+      <a href="https://wa.me/5491100000000"><img src="img/whatsapp.svg" width="24" height="24"></a>
+      <a href="https://maps.google.com/?q=Centro+Medico+Aurora"><img src="img/mapa.svg" width="24" height="24"></a>
+    </p>
+  </main>
+
+  <footer>© 2026 Centro Médico Aurora · Sitio de prueba ficticio para validar FARO.</footer>
+
+  <script>
+    function enviar() {
+      var correo = document.getElementById('correo');
+      var error = document.getElementById('error-correo');
+      if (!correo.value || correo.value.indexOf('@') < 0) {
+        error.textContent = 'Error en el campo.';
+      } else {
+        error.textContent = '';
+        alert('Consulta enviada');
+      }
+    }
+  </script>
+</body>
+</html>
