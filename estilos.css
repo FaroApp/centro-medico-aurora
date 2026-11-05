@@ -18,3 +18,4 @@ button:focus, a:focus, input:focus, .boton:focus { outline: none; }   /* foco in
 .enlace-color { color: #0d4f8b; text-decoration: none; }      /* link distinguido solo por color */
 .error { color: #c0392b; font-size: 14px; min-height: 18px; }
 footer { margin-top: 40px; padding: 16px 24px; background: #f2f4f6; font-size: 13px; color: #9aa5b1; } /* contraste bajo */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, .boton:focus-visible { outline: 3px solid #ffbf47; outline-offset: 2px; }
